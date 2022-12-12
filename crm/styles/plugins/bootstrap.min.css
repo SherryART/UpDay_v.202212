@@ -600,8 +600,8 @@ pre code {
 
 .container-fluid {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 6px;
+    padding-left: 6px;
     margin-right: auto;
     margin-left: auto
 }
@@ -6951,7 +6951,16 @@ button.bg-danger:hover {
 .bg-light {
     background-color: #f8f9fa !important
 }
+.bg-white {
+    background-color: #ffffa !important
+}
+.bg-darkgrey {
+    background-color: #efefef !important
 
+}
+.bg-lightblue {
+    background-color: aliceblue; !important
+}
 a.bg-light:focus,
 a.bg-light:hover,
 button.bg-light:focus,
@@ -8704,17 +8713,17 @@ button.bg-dark:hover {
 
 .pt-4,
 .py-4 {
-    padding-top: 1.5rem !important
+    padding-top: 1.2rem !important
 }
 
 .pr-4,
 .px-4 {
-    padding-right: 1.5rem !important
+    padding-right: 2rem !important
 }
 
 .pb-4,
 .py-4 {
-    padding-bottom: 1.5rem !important
+    padding:1rem 2.2rem !important
 }
 
 .pl-4,
@@ -8728,7 +8737,7 @@ button.bg-dark:hover {
 
 .pt-5,
 .py-5 {
-    padding-top: 3rem !important
+    padding-top: 2.5rem !important
 }
 
 .pr-5,
@@ -8738,7 +8747,7 @@ button.bg-dark:hover {
 
 .pb-5,
 .py-5 {
-    padding-bottom: 3rem !important
+    padding-bottom: 2.5rem !important
 }
 
 .pl-5,

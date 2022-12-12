@@ -4,6 +4,7 @@
     - Overlay
 ------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100i,200,300,300i,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 [data-overlay] {
   position: relative;
   background-size: cover;
@@ -51,7 +52,7 @@ html, body {
   overflow-x: hidden !important; }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Noto Sans TC', sans-serif "Poppins", sans-serif; 
   font-weight: normal;
   font-style: normal;
   font-size: 14px; }
@@ -62,18 +63,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family:  'Noto Sans TC', sans-serif "Poppins", sans-serif; 
   color: #2B4B80;
   line-height: 1.4;
   margin-top: 0px;
   font-style: normal;
-  font-weight: 500;
   text-transform: normal; }
+h2{
+  font-weight: 600;
+}
+h1{
+
+       font-weight: 700;
+    }
 
 p {
-  font-family: "Poppins", sans-serif;
-  color: #808080;
-  font-size: 16px;
+  font-family:  'Noto Sans TC', sans-serif "Poppins", sans-serif; 
+  color: #898181;
+  font-size: 1.25rem;
   line-height: 1.8;
   margin-bottom: 15px;
   font-weight: normal; }
@@ -243,7 +250,9 @@ hr {
   color: #fff !important; }
 
 .t-primary {
-  color: #FF8D00 !important; }
+    color: #30c5dd  !important;
+    font-size: xx-large;
+    font-weight: 700;}
 
 .t-primary-light {
   color: #30c5dd !important; }
@@ -500,10 +509,10 @@ hr {
     background: #30c5dd;
     height: 2em;
     width: 2em;
-    right: 1.5em;
-    bottom: 4em;
+    right: 6em;
+    bottom: 1.4rem;
     color: #fff;
-    font-size:1.5em;
+    font-size:1em;
     text-align: center;
     border-radius: 50%;
     line-height: 2em;
@@ -1892,7 +1901,7 @@ hr {
 .footer-padding {
   padding-top: 6%;
   padding-bottom: 1.5em;
-  margin-left: 4em;
+  margin-left: 0em;
       padding-left: 3em;
 
    }
@@ -1900,7 +1909,7 @@ hr {
     .footer-padding {
       padding-top: 6%;
       padding-bottom: 1.5em;
-      margin-left: 4em;
+      margin-left: 0em;
           padding-left: 3em;
 
 
@@ -1908,7 +1917,7 @@ hr {
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .footer-padding {
       padding-top: 6%;
-      margin-left: 4em;
+      margin-left: 0em;
       padding-bottom: 15px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .footer-padding {
@@ -2017,6 +2026,12 @@ hr {
   -webkit-box-shadow: 20px 0 10px rgba(0, 0, 0, 0.06);
           box-shadow: 20px 0 10px rgba(0, 0, 0, 0.06); }
 
+.zoom{
+  transition: transform .35s
+}
+.zoom:hover{
+  transform: scale(1.085);
+}
 .contact-modal .modal-content {
   border-radius: 10px;
   text-align: center;
@@ -2360,26 +2375,37 @@ hr {
 
 .hero-area {
   margin-top: -1px; }
-  .hero-area .hero__caption {
+
+.hero-area .hero__caption {
     position: relative; 
-    margin-bottom: 2em;
+    margin: 1em 0.65rem 1rem 1.5rem;
 
   }
-    @media (max-width: 767px) {
-      .hero-area .hero__caption {
-        padding-top: 1em; } }
+
+@media (max-width: 767px) {
+
+    .hero-area .hero__caption {
+        padding-top: 1em;
+        margin:  1rem; 
+      } 
+    .t-primary{
+    font-size: 1.25rem;  
+
+    }
+}
     .hero-area .hero__caption h1 {
       font-size: 2.8em;
       font-weight: 700;
-      margin-bottom: 14px;
+      margin-bottom: 0.5rem;
       color: #2B4B80;
       font-family: "Poppins", sans-serif;
       line-height: 1.2;
       text-transform: capitalize;
       margin-bottom: 0.5em; }
+
       @media (max-width: 1560px) {
         .hero-area .hero__caption h1 {
-          font-size: 2.5em;
+          font-size: 3.2em;
           line-height: 1.2; } }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .hero-area .hero__caption h1 {
@@ -2388,11 +2414,11 @@ hr {
       @media (max-width: 767px) {
         .hero-area .hero__caption h1 {
           font-size:2.5em;
-          line-height: 1.4;
-          margin-top: 1em;
+          line-height: 1.2;
+          margin-top: 0.5em;
            } }
     .hero-area .hero__caption p {
-      margin-bottom: 2.8em;
+      margin-bottom: 2em;
       padding-right: 155px; }
       @media (max-width: 1560px) {
         .hero-area .hero__caption p {
@@ -2416,12 +2442,16 @@ hr {
     .hero-area .hero__img img {
       width: 100%;
       height: auto;
+
       /* max-height: 68vh;  */
 	}
     .hero-area .hero__img.noshadow {
       background-color: transparent;
       -webkit-box-shadow: 0 0 0 0;
-              box-shadow: 0 0 0 0; }
+              box-shadow: 0 0 0 0;
+          /*margin: 1rem;    */    
+
+               }
 
 .hero-area .hero-cap h2 {
   color: #fff;
@@ -2613,16 +2643,7 @@ hr {
     background-image: url("../../images/crm/logotype_main.svg");
     z-index: 10000;
     
-
-
-
-
    }
-  .footer-area .footer-logo img {
-    height: 2em;
-
-  }
-
 
 .footer-area .footer-pera .info1 {
   font-size:0.7em;

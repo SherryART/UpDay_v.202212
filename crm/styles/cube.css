@@ -7,9 +7,10 @@
 
 html, body {
   font-size: 1em;
-  color: #30c5dd;
+  color: #30dbf7;
   line-height: normal;
   letter-spacing: .3px;
+  font-weight: 600;
   margin: 0;
   padding: 0;
   overflow-x: hidden; }
@@ -89,6 +90,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+.footer-logo img{
+  max-width: 40%;
+} 
 /* ==========================================================================
  *   flexbox
  *==========================================================================*/
@@ -393,8 +397,7 @@ img {
 
 .main-title {
   color: #1A2658;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin:1.25rem 0rem;
   font-weight: 800;
   line-height: 1.5; }
 
@@ -905,17 +908,17 @@ img {
 @media screen and (min-width: 1441px) {
   .l-iconGrid .name_1,
   .l-iconGrid .name_2 {
-    font-size: 42.66667px; } }
+    font-size: 2rem; } }
 
 @media screen and (max-width: 1440px) {
   .l-iconGrid .name_1,
   .l-iconGrid .name_2 {
-    font-size: 35.55556px; } }
+    font-size: 1.8rem; } }
 
 @media screen and (max-width: 991px) {
   .l-iconGrid .name_1,
   .l-iconGrid .name_2 {
-    font-size: 32.0px; } }
+    font-size: 1rem; } }
 
 @media screen and (max-width: 1199px) {
   .l-iconGrid {
@@ -965,7 +968,8 @@ img {
       grid-row: 2;
       margin: 10% auto; } }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) 
+{
   .l-iconGrid {
     margin: 0 auto;
     padding: 0 6%;
@@ -1252,7 +1256,12 @@ img {
 
 }
 
+.icon-free{
+  width: 100%;
+  background-image: url("../../images/crm/icon_"); 
+  background-size: contain;
 
+}
 .cube-logo {
   display: inline-block;
   width: 100px;
@@ -1369,3 +1378,20 @@ img {
 	font-size: 1.2em;
   }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  width: 100%;
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+iframe{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
