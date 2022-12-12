@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" ng-app="app" id="ng-app">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta property="og:image" content="/images/crm/favicon.ico">
+    <meta property="og:title" content="UpDay &#x4E00;&#x7AD9;&#x5F0F;&#x8F15;&#x9B06;&#x7BA1;&#x7406;&#x6240;&#x6709;&#x5BA2;&#x6236;&#x8CC7;&#x8A0A;">
+    <meta property="og:description" content="UpDay &#x4E00;&#x7AD9;&#x5F0F;&#x8F15;&#x9B06;&#x7BA1;&#x7406;&#x6240;&#x6709;&#x5BA2;&#x6236;&#x8CC7;&#x8A0A;">
+    <meta property="description" content="UpDay &#x4E00;&#x7AD9;&#x5F0F;&#x8F15;&#x9B06;&#x7BA1;&#x7406;&#x6240;&#x6709;&#x5BA2;&#x6236;&#x8CC7;&#x8A0A;">
+    <meta name="facebook-domain-verification" content="m42fqyicyivjveja96en8nwgfe4jue" />
+
+    <link rel="icon" href="../images/crm/favicon.ico">
+    <title>UpDay &#x4E00;&#x7AD9;&#x5F0F;&#x8F15;&#x9B06;&#x7BA1;&#x7406;&#x6240;&#x6709;&#x5BA2;&#x6236;&#x8CC7;&#x8A0A;</title>
+
+    
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MD7KMW2');
+    </script>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+    <script type="text/javascript" src="../js/angular-route.min.js"></script>
+    <script type="text/javascript" src="../js/angular-touch.min.js"></script>
+    <script type="text/javascript" src="../js/angular-sanitize.min.js"></script>
+
+    <script type="text/javascript" src="../js/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="../js/multirange.js"></script>
+    <script type="text/javascript" src="../js/customSelect.js"></script>
+    <script type="text/javascript" src="../js/controllers/app.js?v=BshmTSyCbjb9TyXCN1KiMQpdnMKL6rWKtHTHDXvSq90"></script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat:300,400,600,700|Noto+Sans+TC:100,300,400,500,700,900"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../crm/styles/fonts/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="../crm/styles/plugins.css?v=YBizSORNBSLluqWTY1NC42TrcnHRMa9RWSskW-5sPtU">
+    <link rel="stylesheet" type="text/css" href="../crm/styles/common.css?v=sfLM9OIfk6-_85us-8Fwm_Naxx_0Ywf8unyC0NnsLFA">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '862438881610893');
+        fbq('track', 'PageView');
+    </script>
+    <!-- End Facebook Pixel Code -->
+
+    
+    <link rel="stylesheet" type="text/css" href="../crm/styles/cube.css?v=Vw8cJZZtO2WBMOsUlmoWpvbVtaJtZm38DxeMM73BJxc">
+    <link rel="stylesheet" type="text/css" href="../crm/styles/index.css?v=fONW-PVZqDQlm4kO524pc0YzDHoaegckM1W9S6jK1JA">
+
+
+    
+    <!-- Facebook Pixel Code -->
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=862438881610893&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body ng-controller="MainCtrl" ng-cloak>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD7KMW2"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <div class="header-area header-transparrent">
+            <div class="main-header header-sticky">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-xl-2 col-2">
+                            <div class="logo">
+                                <a href="https://www.upday.ai/?culture=zh-TW&amp;ui-culture=zh-TW"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-8 d-flex align-items-center justify-content-end">
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li>
+                                            <a href="Services#">&#x7522;&#x54C1;</a>
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="https://www.upday.ai/Home/Sales?culture=zh-TW&amp;ui-culture=zh-TW"
+                                                       alt="&#x92B7;&#x552E;">&#x92B7;&#x552E;</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.upday.ai/Home/Services?culture=zh-TW&amp;ui-culture=zh-TW"
+                                                       alt="&#x5BA2;&#x6236;&#x670D;&#x52D9;">&#x5BA2;&#x6236;&#x670D;&#x52D9;</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.upday.ai/Home/MessageBot?culture=zh-TW&amp;ui-culture=zh-TW"
+                                                       alt="UpChat">UpChat</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.upday.ai/?culture=zh-TW&amp;ui-culture=zh-TW#price">&#x50F9;&#x9322;</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="lang-btn">
+                                <span class="icon"><i class="icon-earth"></i></span>
+                                <ul class="lang-nav nostyle">
+                                    <li><a href="Services" title="中文" ng-click="SetLanguage('zh-TW')">中文</a></li>
+                                    <li><a href="Services" title="English" ng-click="SetLanguage('en-US')">English</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-right-btn f-right d-none d-lg-block ml-lg-4">
+                                <a href="https://app.upday.ai" target="_blank"><div class="btn header-btn-login">&#x767B;&#x5165;</div></a>
+                                <div class="btn header-btn" data-toggle="modal" data-target="#start-free" data-title="&#x99AC;&#x4E0A;&#x555F;&#x7528; All-in-one CRM &#x9AD4;&#x9A57;&#xFF0C;&#x7D55;&#x5C0D;&#x514D;&#x8CBB;.">&#x514D;&#x8CBB;&#x4F7F;&#x7528;</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <input type="hidden" id="RequestVerificationToken" name="RequestVerificationToken" value="CfDJ8G8ZoGzylTtPoScvxSEk6aXb4sEuApYpAzPFoP5G3Xj4-k58isnYHQxJFROjw44sXD-E6m2dKRU3SvqHDCrZbNCXSdfGe_gSxgqtxXaIaPQLkzcvovJ1nQDsYwhMzJ6GKFEb7saYD73To2dabzY8554">
+    <main id="sales" ng-controller="homeCtrl">
+    <div ng-init="crmInit()">
+        <div class="hero-area">
+            <div class="hero-height d-flex align-items-center" data-background="../images/crm/product_h1_hero.png">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-xl-8 col-lg-7 col-12">
+                            <div class="hero__img noshadow" data-animation="fadeInLeft" data-delay="1s"><img src="../images/crm/omnichannel.png" alt=""></div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-12 mb-4 mb-md-0">
+                            <div class="hero__caption">
+                                <h5 class="t-primary mb-2">UpDay &#x5BA2;&#x6236;&#x670D;&#x52D9;</h5>
+                                <h1 data-animation="fadeInRight" data-delay=".4s">&#x5FEB;&#x901F;&#x56DE;&#x61C9;&#x5BA2;&#x6236;&#x6EFF;&#x610F;</h1>
+                                <p class="wow fadeInUp d-02s">&#x901A;&#x904E; Email&#x3001;&#x7C21;&#x8A0A;&#x3001;&#x624B;&#x6A5F;&#x3001;&#x7DB2;&#x8DEF;&#x96FB;&#x8A71;&#x3001;Line &#x8207;&#x5176;&#x4ED6;&#x901A;&#x8A0A;&#x670D;&#x52D9;</p>
+                                <div class="btn hero__btn" data-toggle="modal" data-target="#contact-us" data-title="&#x514D;&#x8CBB;&#x53D6;&#x5F97;&#x7522;&#x54C1;&#x6F14;&#x793A;&#x6216;&#x5176;&#x4ED6;&#x8CC7;&#x8A0A;">&#x53D6;&#x5F97;&#x6F14;&#x793A;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="bg-light">
+            <div class="pageFill pb-4 row justify-content-between">
+            </div>
+            <div class="container">
+                <div class="pageFill pb-4 row justify-content-between">
+                    <div class="col-12 col-md-6 text wow fadeIn d-flex flex-column justify-content-center">
+                        <h2>&#x66F4;&#x4FBF;&#x6377;&#x5730;&#x8207;&#x60A8;&#x7684;&#x5BA2;&#x6236;&#x6E9D;&#x901A;</h2><em class="f-subTitle d-block mb-2">&#x5168;&#x65B9;&#x4F4D;&#x670D;&#x52D9;&#x4E2D;&#x5FC3;</em>
+                        <p>&#x6574;&#x5408;&#x5404;&#x5F0F;&#x901A;&#x8A0A;&#x7BA1;&#x9053;&#xFF0C;&#x5982;&#x96FB;&#x8A71;&#x7CFB;&#x7D71;&#x3001;&#x7DB2;&#x8DEF;&#x96FB;&#x8A71;&#x3001;Email&#x3001;&#x7C21;&#x8A0A;&#x3001;Line &#x8207;&#x5176;&#x4ED6;&#x901A;&#x8A0A;&#x670D;&#x52D9;&#x3002;&#x81EA;&#x52D5;&#x5316;&#x7684;&#x958B;&#x555F;&#x60A8;&#x6240;&#x9700;&#x8981;&#x7684;&#x901A;&#x8A0A;&#x8A18;&#x9304;&#x3002;</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 breck-pic wow fadeInRight d-03s">
+                        <div class="pic d-flex justify-content-center">
+                            <img src="../images/crm/chat.png" alt="UpDay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pageFill pb-4 row justify-content-between">
+            </div>
+        </section>
+        <section class="bg-light">
+            <div class="pageFill pb-4 row justify-content-between">
+            </div>
+            <div class="container">
+                <div class="pageFill pb-4 row justify-content-between">
+                    <div class="col-12 col-md-6 col-lg-5 breck-pic wow fadeInRight d-03s">
+                        <div class="pic d-flex justify-content-center">
+                            <img src="../images/crm/case360.png" alt="UpDay">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text wow fadeIn d-flex flex-column justify-content-center">
+                        <h2>&#x638C;&#x63E1;&#x81EA;&#x4F86;&#x5BA2;&#x7FA4;&#x7684;&#x4E00;&#x5207;&#x8A0A;&#x606F;</h2><em class="f-subTitle d-block mb-2">&#x4E00;&#x9801;&#x901A;&#x900F;&#x5BA2;&#x6236;&#x8CC7;&#x8A0A;</em>
+                        <p>UpDay &#x5354;&#x52A9;&#x60A8;&#x5728;&#x4E00;&#x500B;&#x9801;&#x9762;&#x5373;&#x6642;&#x4E86;&#x89E3;&#x5BA2;&#x6236;&#x7684;&#x6A5F;&#x6703;&#x3001;&#x8A02;&#x55AE;&#x3001;&#x67E5;&#x8A62;&#x3001;&#x554F;&#x984C;&#x3001;&#x6295;&#x8A34;&#x8207;&#x6E9D;&#x901A;&#x6B77;&#x53F2;&#x7B49;&#x95DC;&#x9375;&#x8CC7;&#x8A0A;&#x3002;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pageFill pb-4 row justify-content-between">
+            </div>
+        </section>
+        <section class="bg-light">
+            <div class="pageFill pb-4 row justify-content-between">
+            </div>
+            <div class="container">
+                <div class="pageFill pb-4 row justify-content-between">
+                    <div class="col-12 col-md-6 text wow fadeIn d-flex flex-column justify-content-center">
+                        <h2>&#x5FEB;&#x901F;&#x6AA2;&#x8996; &#x7C21;&#x55AE;&#x64CD;&#x4F5C; &#x8F15;&#x9B06;&#x641C;&#x5C0B;</h2><em class="f-subTitle d-block mb-2">&#x5C08;&#x5C6C;&#x8A2D;&#x8A08;&#x60A8;&#x7684;&#x6BCF;&#x65E5;&#x5DE5;&#x4F5C;</em>
+                        <p>&#x60A8;&#x53EF;&#x900F;&#x904E; UpDay &#x7684;&#x641C;&#x5C0B;&#x6B04;&#x4F4D;&#xFF0C;&#x8FC5;&#x901F;&#x627E;&#x51FA;&#x5BA2;&#x6236;&#x7684;&#x76F8;&#x95DC;&#x8CC7;&#x8A0A;&#x3002;UpDay &#x8B93;&#x60A8;&#x7CBE;&#x6E96;&#x3001;&#x76F4;&#x89BA;&#x7684;&#x7D44;&#x7E54;&#x5BA2;&#x6236;&#x8CC7;&#x6599;&#xFF0C;&#x4EE5;&#x5229;&#x5FEB;&#x901F;&#x7684;&#x505A;&#x51FA;&#x884C;&#x52D5;&#x3002;</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 breck-pic wow fadeInRight d-03s">
+                        <div class="pic d-flex justify-content-center">
+                            <img src="../images/crm/search.png" alt="UpDay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pageFill pb-4 row justify-content-between">
+            </div>
+        </section>
+        <section class="bg-light">
+            <div class="pageFill pb-4 row justify-content-between">
+            </div>
+            <div class="container">
+                <div class="pageFill pb-4 row justify-content-between">
+                    <div class="col-12 col-md-6 col-lg-5 breck-pic wow fadeInRight d-03s">
+                        <div class="pic d-flex justify-content-center">
+                            <img src="../images/crm/slider_03.svg" alt="UpDay">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text wow fadeIn d-flex flex-column justify-content-center">
+                        <h2>&#x5168;&#x901A;&#x8DEF;&#x8F15;&#x9B06;&#x884C;&#x92B7;&#x60A8;&#x7684;&#x5BA2;&#x6236;</h2><em class="f-subTitle d-block mb-2">&#x6279;&#x91CF;&#x767C;&#x9001;&#x5B9A;&#x5236;&#x5316;&#x8A0A;&#x606F;</em>
+                        <p>&#x5728;&#x591A;&#x7A2E;&#x901A;&#x8A0A;&#x670D;&#x52D9;&#x4E0A;&#x4F7F;&#x7528;&#x8A0A;&#x606F;&#x6A21;&#x677F;&#xFF0C;&#x53EA;&#x8981;&#x64B0;&#x5BEB;&#x4E00;&#x6B21;&#x8A0A;&#x606F;&#xFF0C;UpDay &#x66FF;&#x60A8;&#x751F;&#x6210;&#x7528;&#x6236;&#x5C08;&#x5C6C;&#x7684;&#x5B9A;&#x88FD;&#x8A0A;&#x606F;&#x3002;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pageFill pb-4 row justify-content-between">
+            </div>
+        </section>
+        <section class="bg-light">
+            <div class="pageFill pb-4 row justify-content-between">
+            </div>
+            <div class="container">
+                <div class="pageFill pb-4 row justify-content-between">
+                    <div class="col-12 col-md-6 text wow fadeIn d-flex flex-column justify-content-center">
+                        <h2>&#x5EFA;&#x69CB;&#x60A8;&#x5C08;&#x5C6C;&#x7684;&#x77E5;&#x8B58;&#x8CC7;&#x6599;&#x5EAB;</h2><em class="f-subTitle d-block mb-2">&#x512A;&#x79C0;&#x5BA2;&#x670D;&#x7684;&#x79D8;&#x5BC6;</em>
+                        <p>&#x544A;&#x5225;&#x4E00;&#x500B;&#x554F;&#x984C;&#x6771;&#x627E;&#x897F;&#x9084;&#x89E3;&#x6C7A;&#x4E0D;&#x4E86;&#xFF0C;&#x5EFA;&#x69CB;&#x60A8;&#x5C08;&#x5C6C;&#x7684;&#x77E5;&#x8B58;&#x8CC7;&#x6599;&#x5EAB;&#xFF0C;&#x63D0;&#x4F9B;&#x5373;&#x6642;&#x53C8;&#x5B8C;&#x6574;&#x7684;&#x89E3;&#x7B54;&#x7D66;&#x60A8;&#x7684;&#x5BA2;&#x6236;&#x5427;&#x3002;</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 breck-pic wow fadeInRight d-03s">
+                        <div class="pic d-flex justify-content-center">
+                            <img src="../images/crm/ka.png" alt="UpDay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pageFill pb-4 row justify-content-between">
+            </div>
+        </section>
+        <div class="have-project we-padding">
+            <div class="container">
+                <div class="haveAproject">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-xl-7 col-lg-9 col-md-12">
+                            <div class="wantToWork-caption">
+                                <h2>&#x60F3;&#x4E86;&#x89E3;&#x66F4;&#x591A;</h2>
+                                <p style="color:#fff;">&#x60F3;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x5982;&#x4F55;&#x80FD;&#x5920;&#x96A8;&#x6642;&#x96A8;&#x5730;&#x8F15;&#x9B06;&#x7BA1;&#x7406;&#x5BA2;&#x6236;&#x95DC;&#x4FC2;&#xFF0C;&#x6B61;&#x8FCE;&#x8207;&#x6211;&#x5011;&#x806F;&#x7E6B;&#x3002;</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-3 col-md-12">
+                            <div class="wantToWork-btn f-right">
+                                <div class="btn btn-ans" data-toggle="modal" data-target="#contact-us" data-title="&#x514D;&#x8CBB;&#x53D6;&#x5F97;&#x7522;&#x54C1;&#x6F14;&#x793A;&#x6216;&#x5176;&#x4ED6;&#x8CC7;&#x8A0A;">&#x806F;&#x7D61;&#x6211;&#x5011;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-area footer-padding">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-md-4 col-sm-8">
+                            <div class="single-footer-caption">
+                                <div class="single-footer-caption mb-30">
+                                    <!-- logo-->
+                                    <div class="footer-logo mb-3 mb-md-4">
+                                        <a href="https://www.upday.ai/?culture=zh-TW&amp;ui-culture=zh-TW">
+                                            <img src="../images/crm/logotype_main.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="footer-social mb-2">
+                                        <a href="https://www.facebook.com/upday.cloud" target="_blank"><i class="icon-facebook"></i></a>
+                                        <a href="https://www.linkedin.com/company/updayai" target="_blank"><i class="icon-linkedin"></i></a>
+                                        <a href="https://medium.com/@upday.ai" target="_blank"><i class="icon-medium"></i></a>
+                                    </div>
+                                    <div class="footer-tittle">
+                                        <div class="footer-pera">
+                                            <ul>
+                                                <li>
+                                                    <a href="Services#">sales@upday.ai</a>
+                                                </li>
+                                                <li>
+                                                    <a href="Services#">support@upday.ai</a>
+                                                </li>
+                                            </ul>
+                                            <p class="info1">&#xA9;ART Solutions Limited 2022<br>&#x7248;&#x6B0A;&#x6240;&#x6709;&#x3002;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="contact-modal modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="case-1Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="contact-us-content">
+            <div class="d-flex align-items-center justify-content-center">
+                <h5 id="contact-us-title"></h5>
+            </div>
+            <div class="modal-body">
+                <form name="getintouchform" action="Services" method="post">
+                    <div class="row">
+                        <div class="col-6 pr-2">
+                            <div class="input-group mb-3">
+                                <input class="form-control" type="text" placeholder="&#x59D3;" ng-model="layout.contactUsLastName" ng-required="true">
+                            </div>
+                        </div>
+                        <div class="col-6 pl-2">
+                            <div class="input-group mb-3">
+                                <input class="form-control" type="text" placeholder="&#x540D;" ng-model="layout.contactUsFirstName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="text" placeholder="&#x516C;&#x53F8;" ng-model="layout.contactUsCompany">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="mail" placeholder="&#x96FB;&#x5B50;&#x90F5;&#x4EF6;" inputmode="email"
+                               ng-model="layout.contactUsEmail" ng-required="true">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="tel" placeholder="&#x96FB;&#x8A71;&#x865F;&#x78BC;" inputmode="tel"
+                               ng-model="layout.contactUsPhoneNumber">
+                    </div>
+                    <div class="input-group mb-3">
+                        <textarea class="form-control" name="" cols="30" rows="5" placeholder="&#x4FE1;&#x606F;&#x6216;&#x7559;&#x8A00;"
+                                  ng-model="layout.contactUsMessage"></textarea>
+                    </div>
+                    <input class="btn hero-btn w-100" type="submit" value="&#x9001;&#x51FA;"
+                           ng-click="getintouchform.$valid && ContactUsV3('zh-TW', false)">
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8G8ZoGzylTtPoScvxSEk6aXb4sEuApYpAzPFoP5G3Xj4-k58isnYHQxJFROjw44sXD-E6m2dKRU3SvqHDCrZbNCXSdfGe_gSxgqtxXaIaPQLkzcvovJ1nQDsYwhMzJ6GKFEb7saYD73To2dabzY8554" /></form>
+            </div>
+        </div>
+        <div class="modal-content" id="contact-us-thanks" style="display:none;">
+            <div class="modal-body">
+                <p>&#x8B1D;&#x8B1D;&#x60A8;&#x7684;&#x7559;&#x8A00;, &#x6211;&#x5011;&#x6703;&#x5118;&#x5FEB;&#x56DE;&#x5FA9;!</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="contact-modal modal fade" id="start-free" tabindex="-1" role="dialog" aria-labelledby="case-1Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="start-free-content">
+            <div class="d-flex align-items-center justify-content-center">
+                <h5 id="start-free-title"></h5>
+            </div>
+            <div class="modal-body">
+                <form name="startfreeform" action="Services" method="post">
+                    <div class="row">
+                        <div class="col-6 pr-2">
+                            <div class="input-group mb-3">
+                                <input class="form-control" type="text" placeholder="&#x59D3;" ng-model="layout.contactUsLastName" ng-required="true">
+                            </div>
+                        </div>
+                        <div class="col-6 pl-2">
+                            <div class="input-group mb-3">
+                                <input class="form-control" type="text" placeholder="&#x540D;" ng-model="layout.contactUsFirstName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="text" placeholder="&#x516C;&#x53F8;" ng-model="layout.contactUsCompany">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="mail" placeholder="&#x96FB;&#x5B50;&#x90F5;&#x4EF6;" inputmode="email"
+                               ng-model="layout.contactUsEmail" ng-required="true">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="tel" placeholder="&#x96FB;&#x8A71;&#x865F;&#x78BC;" inputmode="tel"
+                               ng-model="layout.contactUsPhoneNumber">
+                    </div>
+                    <input class="btn hero-btn w-100" type="submit" value="&#x9001;&#x51FA;"
+                           ng-click="startfreeform.$valid && ContactUsV3('zh-TW', true)">
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8G8ZoGzylTtPoScvxSEk6aXb4sEuApYpAzPFoP5G3Xj4-k58isnYHQxJFROjw44sXD-E6m2dKRU3SvqHDCrZbNCXSdfGe_gSxgqtxXaIaPQLkzcvovJ1nQDsYwhMzJ6GKFEb7saYD73To2dabzY8554" /></form>
+            </div>
+        </div>
+        <div class="modal-content" id="start-free-thanks" style="display:none;">
+            <div class="modal-body">
+                <p>&#x6211;&#x5011;&#x7684;&#x5718;&#x968A;&#x6B63;&#x5728;&#x5EFA;&#x7F6E;&#x555F;&#x7528;&#x60A8;&#x7684;&#x5E33;&#x865F;&#xFF0C;&#x7576;&#x4F5C;&#x696D;&#x5B8C;&#x6210;&#x60A8;&#x5C07;&#x6703;&#x6536;&#x5230;&#x6211;&#x5011;&#x7684;email&#xFF0C;&#x9084;&#x8ACB;&#x7559;&#x610F;&#x60A8;&#x7684;&#x4FE1;&#x7BB1;&#xFF0C;&#x8B1D;&#x8B1D;&#x3002;</p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- must have angular-slick.js -->
+    <script type="text/javascript" src="../v2/scripts/plugins/angular-slick.js"></script>
+
+    <script type="text/javascript" src="../crm/scripts/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap-->
+    <script type="text/javascript" src="../crm/scripts/vendor/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../crm/scripts/default/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../crm/scripts/plugins/imgLiquid.js"></script>
+    <!-- Jquery plugins-->
+    <script type="text/javascript" src="../crm/scripts/plugins/jquery.slicknav.min.js"></script>
+    <script type="text/javascript" src="../crm/scripts/plugins/slick.min.js"></script>
+    <!-- Date Picker-->
+    <script type="text/javascript" src="../crm/scripts/plugins/wow.min.js"></script>
+    <script type="text/javascript" src="../crm/scripts/plugins/animated.headline.js"></script>
+    <script type="text/javascript" src="../crm/scripts/plugins/jquery.magnific-popup.js"></script>
+    <!-- Scrollup, nice-select, sticky-->
+    <script>
+        $('.we-create-area .slider').slick({
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        adaptiveHeight: true
+                    }
+                }
+            ]
+        });
+    </script>
+    <script type="text/javascript" src="../crm/scripts/plugins/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="../crm/scripts/plugins/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="../crm/scripts/plugins/jquery.sticky.js"></script>
+    <script type="text/javascript" src="../crm/scripts/main.js?v=TxFwdfVXB__AcvkG4RL_aVdrEww_uE-F_VERCPQ1pQs"></script>
+    
+    <script type="text/javascript" src="../js/controllers/home.js?v=cjzPCTymdAlDB2RLAOwaMXkn3o2cNuHFwN27TfkELu0"></script>
+
+    <script>
+        (function (d, t) {
+            var BASE_URL = "https://chat.upday.ai";
+            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            g.src = BASE_URL + "/packs/js/sdk.js";
+            g.defer = true;
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
+            g.onload = function () {
+                window.chatwootSDK.run({
+                    websiteToken: 'PpCk4fpzg3RNUxMKzGuMPZDd',
+                    baseUrl: BASE_URL
+                })
+            }
+        })(document, "script");
+    </script>
+</body>
+
+</html>
