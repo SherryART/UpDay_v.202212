@@ -1324,14 +1324,17 @@ img {
   }
   
 	.card{
-		display: table;
-		padding: 1.5em;
-		width: 100%;
-		height: 100%;
-		max-width: 500px;
-		min-height: 500px;
-		background-color:#f8f9fa6b ;
-		font-size: 14px;
+    display: table;
+    padding: 1.5em;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    min-height: 500px;
+    font-size: 1.2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 30px rgb(8 10 10 / 8%);
+    border-radius: 12px;
+    margin: 1rem;
 	}
 	
 	@media screen and (max-width: 479px) {
@@ -1350,7 +1353,7 @@ img {
 	background-color: #ffffff;
 	color: rgb(0, 0, 0);
 	display: flex;
-	align-items: center;
+/*	align-items: center;*/
 	transform: scale(1.1);
 	z-index: 1;
 	/* text-align: center; */
