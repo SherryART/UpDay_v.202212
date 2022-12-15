@@ -224,8 +224,7 @@ a.single-do:hover {
       color: #FF8D00; } }
 
 .haveAproject {
-  background-image: url("https://upday.ai/crm/img/bg_01.svg");
-  background-size: cover;
+ 
   padding: 64px 69px 54px 78px;
   background-repeat: no-repeat;
   border-radius: 0.3rem ;
