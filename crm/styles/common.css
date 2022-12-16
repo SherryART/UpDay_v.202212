@@ -250,7 +250,7 @@ hr {
   color: #fff !important; }
 
 .t-primary {
-    color: #30c5dd  !important;
+    color: #11b9d4  !important;
     font-size: xx-large;
     font-weight: 700;}
 
@@ -2419,7 +2419,7 @@ hr {
            } }
     .hero-area .hero__caption p {
       margin-bottom: 2em;
-      padding-right: 155px; }
+      padding-right: 1rem; }
       @media (max-width: 1560px) {
         .hero-area .hero__caption p {
           padding-right: 0; } }
@@ -2746,7 +2746,7 @@ hr {
     .footer-bottom-area .footer-copy-right p a:hover {
       color: #FF8D00; }
 
-
+/*
 .demo-card {
   padding: 64px 69px 54px 78px;
   background-repeat: no-repeat;
@@ -2898,3 +2898,4 @@ hr {
     flex-wrap: nowrap;
       } 
   }
+*/
